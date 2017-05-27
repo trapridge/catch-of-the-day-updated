@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import AddFishForm from './AddFishForm'
 import base from '../base'
 
@@ -39,25 +40,25 @@ class Inventory extends React.Component {
     this.setState({ uid: null })
   }
 
-  authHandler = (err, authData) => {
+  authHandler = async (err, authData) => {
     if (err) {
       console.log(err)
       return
     }
 
     const storeRef = base.database().ref(this.props.storeId)
-    storeRef.once('value', (snapshot) => {
-      const data = snapshot.val() || {}
-      if (!data.owner) {
-        storeRef.set({
-          owner: authData.user.uid
-        })
-      }
+    let snapshot = await storeRef.once('value')  
+    const data = snapshot.val() || {}
 
-      this.setState({
-        uid: authData.user.uid,
-        owner: data.owner || authData.user.uid
+    if (!data.owner) {
+      storeRef.set({
+        owner: authData.user.uid
       })
+    }
+
+    this.setState({
+      uid: authData.user.uid,
+      owner: data.owner || authData.user.uid
     })
   }
 
