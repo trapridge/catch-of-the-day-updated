@@ -1,5 +1,6 @@
 # TODO
 
+- [ ] reduxify
 - [ ] add store picker
 - [ ] add validators
 - [ ] personalize GUI, get rid of fish
@@ -7,8 +8,8 @@
 - [ ] unit tests
 - [ ] e2e tests
 - [ ] use flow?
-- [ ] reduxify
-- [ ] immutable.js
+- [ ] eject from cra
+- [ ] immutable.js?
 - [ ] error mgmt (if offline?)
 - [x] update libs
 - [x] modernize using updated course
