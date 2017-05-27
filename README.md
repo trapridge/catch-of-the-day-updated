@@ -1,14 +1,12 @@
 # Catch of the day
 
-React app built using @wesbos's course: https://reactforbeginners.com/
-
-Updaded to React v15 and more recent versions of some of the deps. 
+React app built on top of the app build with @wesbos's (updated) course (https://reactforbeginners.com/) and extended.
 
 # Install
 
 `npm install`
 
-# Run
+# Run for development
 
-`gulp`
+`npm run watch`
 

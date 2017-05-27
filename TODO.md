@@ -1,12 +1,11 @@
 # TODO
 
-- [ ] modernize using updated course
+- [ ] add store picker
+- [ ] personalize GUI, get rid of fish
+- [ ] make responsive
+- [ ] unit tests
+- [ ] use flow?
 - [ ] reduxify
 - [ ] immutable.js
-- [ ] unit tests
-- [ ] webpack
-- [ ] personalize GUI
-- [ ] make responsive
-- [ ] add use case for rx.js and use it
-- [ ] use flow
-
+- [x] modernize using updated course
+- [x] webpack
