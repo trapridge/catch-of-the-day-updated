@@ -2,13 +2,13 @@
 
 First
 
-- [ ] add hmr
 - [ ] reduxify
 - [ ] unit tests
 - [ ] e2e tests
 - [ ] add store picker
-- [ ] use flow?
-- [ ] eject from cra?
+- [ ] conf flow
+- [x] add hmr
+- [X] eject from cra
 - [x] update libs
 - [x] modernize using updated course
 - [x] webpack
