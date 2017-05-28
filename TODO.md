@@ -2,7 +2,8 @@
 
 First
 
-- [ ] reduxify, hmr?
+- [ ] add hmr
+- [ ] reduxify
 - [ ] unit tests
 - [ ] e2e tests
 - [ ] add store picker
@@ -15,7 +16,7 @@ First
 
 Second
 
- * add inpu validators
+ * make responsive
+ * add input validators
  * personalize GUI, get rid of fish
- * make GUI responsive
  * error mgmt (if offline?)
