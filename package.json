@@ -1,7 +1,9 @@
 {
-  "name": "cotd",
+  "name": "catch-of-the-day-updated",
   "version": "0.0.1",
+  "description": ":)",
   "private": true,
+  "author": "@wesbos, @trapridge",
   "devDependencies": {
     "autoprefixer-stylus": "0.10.0",
     "babel-eslint": "^7.1.1",

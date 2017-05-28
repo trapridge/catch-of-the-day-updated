@@ -1,6 +1,6 @@
 # Catch of the day
 
-React app built on top of the app build with @wesbos's (updated) course (https://reactforbeginners.com/) and extended.
+React app featuring a realtime store system. Built by extending and modifying the app created during @wesbos's fantastic React course (https://reactforbeginners.com/).
 
 # Install
 
@@ -10,3 +10,10 @@ React app built on top of the app build with @wesbos's (updated) course (https:/
 
 `npm run watch`
 
+# Run unit tests
+
+TODO
+
+# Run e2e tests
+
+TODO
