@@ -11,7 +11,7 @@ import sampleFishes from '../sample-fishes'
 
 class App extends React.Component {
   static propTypes = {
-    match: PropTypes.object.isRequired
+    params: PropTypes.object.isRequired
   }
 
   state = {
@@ -21,14 +21,14 @@ class App extends React.Component {
 
   componentWillMount() {
     this.ref = base.syncState(
-      `${this.props.match.params.storeId}/fishes`, {
+      `${this.props.params.storeId}/fishes`, {
         context: this,
         state: 'fishes'
       }
     )
 
     const persistedOrder = 
-      localStorage.getItem(`order-${this.props.match.params.storeId}`)
+      localStorage.getItem(`order-${this.props.params.storeId}`)
     if (persistedOrder) {
       this.setState({
         order: JSON.parse(persistedOrder)
@@ -41,7 +41,7 @@ class App extends React.Component {
   }
 
   componentWillUpdate(nextProps, nextState) {
-    localStorage.setItem(`order-${this.props.match.params.storeId}`, 
+    localStorage.setItem(`order-${this.props.params.storeId}`, 
       JSON.stringify(nextState.order))
   }
 
@@ -110,7 +110,7 @@ class App extends React.Component {
         <Inventory loadSampleFishes={this.loadSampleFishes} 
           addFish={this.addFish} updateFish={this.updateFish} 
           removeFish={this.removeFish} fishes={this.state.fishes}
-          storeId={this.props.match.params.storeId} />
+          storeId={this.props.params.storeId} />
       </div>
     )
   }

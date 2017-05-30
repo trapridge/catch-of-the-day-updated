@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { browserHistory } from 'react-router' 
 import { getFunName } from '../helpers'
 
 class StorePicker extends React.Component {
@@ -20,7 +21,7 @@ class StorePicker extends React.Component {
 
   goToStore = e => {
     e.preventDefault()
-    this.context.router.history.push(`/store/${this.storeInput.value}`)
+    browserHistory.push(`/store/${this.storeInput.value}`)
   }
 }
 
