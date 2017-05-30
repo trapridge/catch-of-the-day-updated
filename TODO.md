@@ -5,8 +5,8 @@ First
 - [ ] reduxify
 - [ ] unit tests
 - [ ] e2e tests
-- [ ] add store picker
 - [ ] conf flow
+- [x] downgrade router to match reduxtagram
 - [x] add hmr
 - [X] eject from cra
 - [x] update libs
@@ -16,6 +16,7 @@ First
 
 Second
 
+ * add store picker
  * make responsive
  * add input validators
  * personalize GUI, get rid of fish
